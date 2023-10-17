@@ -1,8 +1,9 @@
 ---
 # tasks file for lighttpd
 - name:  Atualizar pacotes
-   apt:
-     update_cache: yes
+  apt:
+    update_cache: yes
+
 - name: Instalar lighttpd
   apt:
     name: lighttpd

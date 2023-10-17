@@ -2,8 +2,7 @@
   become: yes
 
   roles:
-    - serverTools
-    - serverApache
+   - lighttpd
 
 
 

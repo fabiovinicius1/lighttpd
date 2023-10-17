@@ -1,2 +1,15 @@
 ---
 # tasks file for lighttpd
+- name:  Atualizar pacotes
+   apt:
+     update_cache: yes
+- name: Instalar lighttpd
+  apt:
+    name: lighttpd
+    state: present
+
+- name: Iniciar servilo lighttpd
+  service:
+    name: lighttpd
+    state: started
+    enable: yes

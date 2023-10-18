@@ -1,2 +1,2 @@
 [hosts_gerencia]
-10.0.2.15 hostname=gerencia
+127.0.0.1 hostname=gerencia

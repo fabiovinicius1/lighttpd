@@ -9,8 +9,8 @@
     name: lighttpd
     state: present
 
-- name: Iniciar servilo lighttpd
+- name: Iniciar serviço lighttpd
   service:
     name: lighttpd
     state: started
-    enable: yes
+    enabled: yes

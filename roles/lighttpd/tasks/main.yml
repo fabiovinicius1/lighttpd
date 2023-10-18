@@ -14,3 +14,8 @@
     name: lighttpd
     state: started
     enabled: yes
+
+- name: Cria meu diretorio web
+  file:
+    path: "{{ default_dir }}"
+    state: directory

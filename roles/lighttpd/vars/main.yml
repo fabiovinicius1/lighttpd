@@ -1,2 +1,3 @@
 ---
 # vars file for lighttpd
+default_dir: /home/gerencia/lighttpd/meu_diretorio_web

@@ -15,6 +15,14 @@
     state: started
     enabled: yes
 
+- name: Verificando o status do lighttpd
+  command: "systemctl status lighttpd"
+  register: status_lighttpd
+
+- name: Exibindo o register
+  debug:
+    msg: "{{ status_lighttpd.stdout }}"
+
 - name: Cria meu diretorio web
   file:
     path: "{{ default_dir }}/meu_diretorio_web"

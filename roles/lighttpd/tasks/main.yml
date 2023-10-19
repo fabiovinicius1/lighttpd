@@ -32,3 +32,9 @@
   copy:
     src: "{{ default_dir }}/index.html"
     dest: "{{ default_dir }}/meu_diretorio_web"
+
+- name: Copiar o arquivo de configuração lighttpd
+  template:
+    src: templates/lighttpd.conf
+    dest: /etc/lighttpd/lighttpd.conf
+  notify: Reiniciar lighttpd

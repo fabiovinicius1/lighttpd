@@ -1,3 +1,5 @@
 ---
 # vars file for lighttpd
 default_dir: /home/gerencia/lighttpd
+server_docement_root: "{{ default_dir }}/meu_diretorio_web"
+server_port_lighttpd: "8080"

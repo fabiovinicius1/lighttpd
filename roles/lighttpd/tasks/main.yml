@@ -25,7 +25,7 @@
 
 - name: Cria meu diretorio web
   file:
-    path: "{{ default_dir }}/meu_diretorio_web"
+    path: "{{ raiz_dir }}/meu_diretorio_web"
     state: directory
     owner: gerencia
     group: gerencia
@@ -35,7 +35,7 @@
 - name: Copiar index.html para meu_diretorio_web
   copy:
     src: "{{ default_dir }}/index.html"
-    dest: "{{ default_dir }}/meu_diretorio_web"
+    dest: "{{ raiz_dir }}/meu_diretorio_web"
     owner: gerencia
     group: gerencia
 

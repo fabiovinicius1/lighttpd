@@ -27,11 +27,17 @@
   file:
     path: "{{ default_dir }}/meu_diretorio_web"
     state: directory
-
+    owner: gerencia
+    group: gerencia
+    modification_time: preserve
+    access_time: preserve 
+ 
 - name: Copiar index.html para meu_diretorio_web
   copy:
     src: "{{ default_dir }}/index.html"
     dest: "{{ default_dir }}/meu_diretorio_web"
+    owner: gerencia
+    group: gerencia
 
 - name: Copiar o arquivo de configuração lighttpd
   template:

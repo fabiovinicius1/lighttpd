@@ -34,7 +34,7 @@
  
 - name: Copiar index.html para meu_diretorio_web
   copy:
-    src: "{{ default_dir }}/index.html"
+    src: files/index.html
     dest: "{{ raiz_dir }}/meu_diretorio_web"
     owner: gerencia
     group: gerencia
